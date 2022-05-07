@@ -1,4 +1,4 @@
-use crate::ast::{ast_main, ast_types};
+use crate::{ast::{ast_main, ast_types}, tokens::TOKENS};
 
 pub fn eval(ast: ast_main){
     let mut result = 0.0;
@@ -35,6 +35,7 @@ pub fn eval(ast: ast_main){
             _ => {}
         }
     }
+    
     println!("{}", result);
     
 }
